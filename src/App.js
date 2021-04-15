@@ -11,7 +11,7 @@ require('dotenv').config();
 
 function App() {
   const [weather, setWeather] = useState(null);
-  const [apiError, setAPIError] = useState("");
+  // const [apiError, setAPIError] = useState("");
   const API_KEY = process.env.REACT_APP_API_KEY;
 
 
@@ -27,15 +27,15 @@ function App() {
   },[]);
 
   const getWeatherByCurrentLocation = async (lat, lon) => {
-    try {
+    // try {
       let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
       const res = await fetch(url);
       const data = await res.json();
       console.log("weather data", data);
       setWeather(data);
-    } catch (err) {
-      setAPIError(err.message);
-    }
+    // } catch (err) {
+    //   setAPIError(err.message);
+    // }
   };
 
   if(!weather){
