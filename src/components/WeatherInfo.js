@@ -16,7 +16,7 @@ const WeatherInfo = ({ weather }) => {
         <Container className="mx-auto my-4 py-4" >
             <Card className="bg-dark text-white main-content">
                 <Card.ImgOverlay className="d-flex flex-column justify-content-center text-center">
-                    <div className="d-flex justify-content-center"> 
+                    <div className="d-flex justify-content-center" >
                         <Card.Title className="text-content">{weather?.name}</Card.Title>
                     </div>
                     <Card.Text className="text-success h1">
