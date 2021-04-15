@@ -1,0 +1,26 @@
+
+
+.container{
+    margin: 0 600px;
+}
+
+.card{
+    position: relative;
+    top: 180px;
+    margin-top: 60px!important;
+    background: rgba(0,0,0,0.9) !important;
+    height: 50vh;
+    border: 5px solid white  !important;
+    border-radius: 25px ;
+    margin:200px;
+
+    
+}
+
+
+.text-content{
+    text-align: center;
+    font-size: 30px;
+    width: 30%;
+    border-bottom: 5px solid white;
+}
